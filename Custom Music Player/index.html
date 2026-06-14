@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>vibey player · your own tracks</title>
+</head>
+<body>
+
+<div class="player-card" id="playerRoot">
+    <div class="color-panel">
+        <span class="color-label">🎨 accent color</span>
+        <input type="color" id="accentColor" value="#ff8c42">
+        <button class="reset-color" id="resetColorBtn">↺ reset</button>
+    </div>
+
+    <!-- cover art: YOUR justin.jpg image will be displayed here -->
+    <div class="cover-area">
+        <div class="cover-img" id="coverArt">
+            <!-- YOUR CUSTOM IMAGE - justin.jpg -->
+            <img src="./images/justin.jpg" alt="Justin album cover" id="mainCoverImage">
+            <div class="cover-text-overlay">🎵 DESPACITO vibes</div>
+        </div>
+    </div>
+
+    <div class="track-info">
+        <div class="song-title" id="songTitle">Despacito</div>
+        <div class="artist-name" id="artistName">Luis Fonsi Ft. Puerto Rican</div>
+    </div>
+
+    <div class="progress-section">
+        <div class="progress-time">
+            <span id="currentTime">0:00</span>
+            <span id="durationTime">0:00</span>
+        </div>
+        <div class="progress-bg" id="progressBarBg">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button class="ctrl-btn" id="prevBtn" aria-label="Previous">
+            <svg viewBox="0 0 24 24"><polygon points="19 20 9 12 19 4 19 20" fill="currentColor" stroke="none"/><rect x="5" y="4" width="2" height="16" fill="currentColor"/></svg>
+        </button>
+        <button class="ctrl-btn play-btn" id="playPauseBtn" aria-label="Play/Pause">
+            <svg viewBox="0 0 24 24" id="playIcon">
+                <polygon points="5 3 19 12 5 21 5 3" fill="currentColor" stroke="none"/>
+            </svg>
+        </button>
+        <button class="ctrl-btn" id="nextBtn" aria-label="Next">
+            <svg viewBox="0 0 24 24"><polygon points="5 20 15 12 5 4 5 20" fill="currentColor" stroke="none"/><rect x="17" y="4" width="2" height="16" fill="currentColor"/></svg>
+        </button>
+    </div>
+
+    <div class="add-song-area">
+        <label class="file-label" for="songFileInput">📁 + add your own song</label>
+        <input type="file" id="songFileInput" accept="audio/*">
+        <span class="custom-tag" id="customTrackBadge">✨ ready for your track</span>
+        <button class="reset-default" id="resetDefaultPlaylistBtn">↺ restore default</button>
+    </div>
+    <div class="note">🎧 click color picker → changes player accents | upload MP3 / audio to replace current playlist</div>
+</div>
+
+<script src="/JavaScript/script.js"> </script>
+</body>
+</html>
