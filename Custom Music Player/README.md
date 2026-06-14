@@ -3,9 +3,9 @@
  <p align="justify">
   A responsive web-based music player that allows users to upload, manage, and play audio files through an interactive and user-friendly interface. The application provides essential music playback controls along with playlist management and theme customization features.🚀 Project Overview
 
-    This project was developed using HTML, CSS, and JavaScript to create a modern browser-based music player. It focuses on delivering a smooth listening experience through dynamic playlist management, audio controls, and customizable themes.
+This project was developed using HTML, CSS, and JavaScript to create a modern browser-based music player. It focuses on delivering a smooth listening experience through dynamic playlist management, audio controls, and customizable themes.
 
-    Users can upload their own songs, control playback, navigate between tracks, and personalize the application's appearance in real time.
+Users can upload their own songs, control playback, navigate between tracks, and personalize the application's appearance in real time.
 </p>
 
 ## ✨ Features
